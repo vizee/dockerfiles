@@ -8,6 +8,8 @@ RUN mv /etc/apt/sources.list /tmp/ && cat /tmp/sources.list | sed 's/archive.ubu
 
 RUN apt-get install -y memcached
 
+RUN rm -rf /var/lib/apt/lists/*
+
 USER memcache
 
 EXPOSE 11211

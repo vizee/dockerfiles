@@ -8,6 +8,8 @@ RUN mv /etc/apt/sources.list /tmp/ && cat /tmp/sources.list | sed 's/archive.ubu
 
 RUN apt-get install -y nginx
 
+RUN rm -rf /var/lib/apt/lists/*
+
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
