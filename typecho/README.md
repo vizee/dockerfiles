@@ -29,3 +29,6 @@ typecho + pgsql 镜像
 **注意**: 在构建完成并且容器运行后, 需要运行向导后可能需要手动创建 `config.inc.php`
 
 [端口配置](https://docs.docker.com/compose/compose-file/#ports)
+
+#### url重写
+已在nginx中配置, 直接在后台设置`设置/永久连接/是否使用地址重写功能`强制启用
